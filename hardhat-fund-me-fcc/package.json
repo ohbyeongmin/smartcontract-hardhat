@@ -18,5 +18,12 @@
         "solhint": "^3.3.7",
         "chai": "^4.3.4"
     },
-    "dependencies": {}
+    "dependencies": {},
+    "scripts": {
+        "test": "yarn hardhat test",
+        "test:staging": "yarn hardhat test --network sepolia",
+        "lint": "yarn solhint 'contracts/*.sol'",
+        "format": "yarn prettier --write .",
+        "coverage": "yarn hardhat coverage"
+    }
 }
